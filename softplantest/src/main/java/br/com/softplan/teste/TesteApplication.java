@@ -1,4 +1,4 @@
-package br.com.altf4teste.teste;
+package br.com.softplan.teste;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,11 +1,11 @@
-package br.com.altf4teste.teste.model;
+package br.com.softplan.teste.model;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Table(name = "produtos")
 @Entity
-public class Produto {
+public class Pessoa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
