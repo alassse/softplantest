@@ -1,4 +1,4 @@
-package br.com.softplan.teste.api.v1.model;
+package br.com.softplan.teste.api.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;

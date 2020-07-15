@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -26,13 +27,13 @@ public class PessoaController {
     }
 
     @PostMapping
-    public ResponseEntity<Pessoa> createPessoa(@RequestBody Pessoa pessoa) {
+    public ResponseEntity<Pessoa> createPessoa(@Valid @RequestBody Pessoa pessoa) {
         return new ResponseEntity(this.pessoaService.createPessoa(pessoa), HttpStatus.OK);
     }
 
     @PutMapping(value="/{id}")
     public ResponseEntity<Pessoa> updatePessoa(@PathVariable("id") Long id,
-                                                @RequestBody Pessoa pessoa) {
+                                               @Valid @RequestBody Pessoa pessoa) {
         return new ResponseEntity(this.pessoaService.updatePessoa(id, pessoa), HttpStatus.OK);
     }
 

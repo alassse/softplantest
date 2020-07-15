@@ -28,9 +28,12 @@ public class PessoaService {
 
     public Boolean updatePessoa(Long id, Pessoa pessoa) {
         pessoaRepository.findById(id).map(record -> {
-            record.setDescricao(pessoa.getDescricao());
-            record.setCodigo(pessoa.getCodigo());
-            record.setMarca(pessoa.getMarca());
+            record.setNome(pessoa.getNome());
+            record.setDataNascimento(pessoa.getDataNascimento());
+            record.setCpf(pessoa.getCpf());
+            record.setEmail(pessoa.getEmail());
+            record.setNacionalidade(pessoa.getNacionalidade());
+            record.setNaturalidade(pessoa.getNaturalidade());
             pessoaRepository.save(record);
 
             return true;

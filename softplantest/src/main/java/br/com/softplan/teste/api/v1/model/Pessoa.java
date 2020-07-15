@@ -1,6 +1,9 @@
 package br.com.softplan.teste.api.v1.model;
 
+import br.com.softplan.teste.api.model.AbstractModel;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
@@ -13,6 +16,8 @@ import java.time.LocalDate;
 @Entity
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Pessoa extends AbstractModel {
     @NotNull
     @Column(name="nome", nullable = false)
