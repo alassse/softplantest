@@ -1,7 +1,7 @@
-package br.com.softplan.teste.controller;
+package br.com.softplan.teste.api.controller;
 
-import br.com.softplan.teste.model.Pessoa;
-import br.com.softplan.teste.service.PessoaService;
+import br.com.softplan.teste.api.v1.model.Pessoa;
+import br.com.softplan.teste.api.service.PessoaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping({"/essoas"})
+@RequestMapping({"/pessoas"})
 public class PessoaController {
     @Autowired
     PessoaService pessoaService;

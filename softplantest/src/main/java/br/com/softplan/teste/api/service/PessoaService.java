@@ -1,7 +1,7 @@
-package br.com.softplan.teste.service;
+package br.com.softplan.teste.api.service;
 
-import br.com.softplan.teste.model.Pessoa;
-import br.com.softplan.teste.repository.PessoaRepository;
+import br.com.softplan.teste.api.v1.model.Pessoa;
+import br.com.softplan.teste.api.repository.PessoaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

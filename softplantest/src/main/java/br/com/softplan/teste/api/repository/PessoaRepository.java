@@ -1,6 +1,6 @@
-package br.com.softplan.teste.repository;
+package br.com.softplan.teste.api.repository;
 
-import br.com.softplan.teste.model.Pessoa;
+import br.com.softplan.teste.api.v1.model.Pessoa;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
